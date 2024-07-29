@@ -2,9 +2,9 @@
 import React from "react"
 import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
-import signup from '@/app/assets/signup.png'
 import { Buttons } from "./Buttons";
 import welcome from '@/app/assets/welcome.png'
+
 import { createClient } from "@/lib/supabase-client";
 import {
     AlertDialog,
@@ -72,7 +72,7 @@ import {
               </div>
               
               <div className="flex flex-col justify-center align-middle items-center gap-3">
-                <Buttons title="Sign in with Google" onClick={signInWithDiscord}/>
+                <Buttons title="Sign in with Google" onClick={signInWithGoogle}/>
                 <Buttons title="Sign in with Discord" onClick={signInWithDiscord}/>
                 <AlertDialogCancel className="m-0 bg-rose-100 text-md w-full">Cancel</AlertDialogCancel>
               </div>
