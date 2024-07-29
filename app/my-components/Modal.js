@@ -1,12 +1,11 @@
-
+'use client'
 import React from "react"
 import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
 import signup from '@/app/assets/signup.png'
 import { Buttons } from "./Buttons";
 import welcome from '@/app/assets/welcome.png'
-import { supabase } from "@/lib/supabase-client";
-
+import { createClient } from "@/lib/supabase-client";
 import {
     AlertDialog,
     AlertDialogAction,
@@ -21,14 +20,27 @@ import {
   import { Button } from "@/components/ui/button"
   
   export default function Modal() {
+    
     async function signInWithDiscord() {
+      const supabase = createClient()
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
-          redirectTo: `https://localhost:3000/loggedin`,
+          redirectTo: `https://localhost:3000/auth/callback`,
         },
       })
     }
+
+    async function signInWithGoogle() {
+      const supabase = createClient()
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `https://localhost:3000/auth/callback`,
+        },
+      })
+    }
+
     return (
       <AlertDialog>
         <AlertDialogTrigger asChild>

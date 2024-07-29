@@ -3,6 +3,7 @@ import Navigation from "./my-boxes/Navigation";
 import Hero from "./my-boxes/Hero";
 import Header from "./my-boxes/Header";
 import sanrio from './assets/sanrio.png'
+import LinkButton from "./my-components/LinkButton";
 
 export default function Home() {
   
@@ -21,6 +22,7 @@ export default function Home() {
     </div>
     <Navigation/>
     <Hero/>
+    <LinkButton title="Login page test"/>
     </>
   );
 }
