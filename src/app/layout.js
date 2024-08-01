@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import { Quicksand } from "next/font/google";
+import Header from "./my-boxes/Header";
+import Navigation from "./my-boxes/Navigation";
 
 const quicksand = Quicksand({
   weight: '700',
@@ -18,7 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={quicksand.className}><Providers>{children}</Providers></body>
+      <body className={quicksand.className}><Providers>
+      <Header/>
+      <Navigation/>
+      {children}
+      </Providers></body>
     </html>
   );
 }

@@ -2,23 +2,23 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
-import lpsdeer from "@/app/displaycase/lpsdeer.png"
-import pmfairy from "@/app/displaycase/pmfairy.png"
-import rilakkuma from "@/app/displaycase/rilakkuma.png"
-import hellokitty from "@/app/displaycase/hellokitty.png"
-import sumikko from "@/app/displaycase/sumikko.png"
-import sylcalico from "@/app/displaycase/sylcalico.png"
-import lpsemecat from "@/app/displaycase/lpsemecat.png"
-import sylguitar from "@/app/displaycase/sylguitar.png"
-import pmmulan from "@/app/displaycase/pmmulan.png"
-import { Card, CardContent } from "@/components/ui/card"
+import lpsdeer from "@/src/app/displaycase/lpsdeer.png"
+import pmfairy from "@/src/app/displaycase/pmfairy.png"
+import rilakkuma from "@/src/app/displaycase/rilakkuma.png"
+import hellokitty from "@/src/app/displaycase/hellokitty.png"
+import sumikko from "@/src/app/displaycase/sumikko.png"
+import sylcalico from "@/src/app/displaycase/sylcalico.png"
+import lpsemecat from "@/src/app/displaycase/lpsemecat.png"
+import sylguitar from "@/src/app/displaycase/sylguitar.png"
+import pmmulan from "@/src/app/displaycase/pmmulan.png"
+import { Card, CardContent } from "@/src/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/src/components/ui/carousel"
 
 export function MyCarousel() {
   const images = [lpsdeer, hellokitty, rilakkuma, pmfairy, sylcalico, sumikko, lpsemecat, sylguitar, pmmulan]

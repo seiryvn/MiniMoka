@@ -1,5 +1,5 @@
 import React from 'react'
-import NavMenu from '../my-components/NavMenu.js'
+import NavMenu from '../my-components/NavMenu'
 // import sanrio from './assets/sanrio.png'
 
 export default function Navigation() {

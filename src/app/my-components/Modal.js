@@ -3,9 +3,9 @@ import React from "react"
 import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
 import { Buttons } from "./Buttons";
-import welcome from '@/app/assets/welcome.png'
+import welcome from '@/src/app/assets/welcome.png'
+import { createClient } from "@/utils/supabase/client";
 
-import { createClient } from "@/lib/supabase-client";
 import {
     AlertDialog,
     AlertDialogAction,
@@ -16,8 +16,8 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-  } from "@/components/ui/alert-dialog"
-  import { Button } from "@/components/ui/button"
+  } from "@/src/components/ui/alert-dialog"
+  import { Button } from "@/src/components/ui/button";
   
   export default function Modal() {
     
@@ -26,7 +26,7 @@ import {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
-          redirectTo: `https://localhost:3000/auth/callback`,
+          redirectTo: `http://localhost:3000/auth/callback`,
         },
       })
     }
@@ -36,7 +36,7 @@ import {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `https://localhost:3000/auth/callback`,
+          redirectTo: `http://localhost:3000/auth/callback`,
         },
       })
     }

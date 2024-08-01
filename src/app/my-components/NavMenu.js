@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { AiOutlineHome } from "react-icons/ai";
-import { cn } from "@/lib/utils"
+import { cn } from "@/src/lib/utils"
 import { IoMdFlower } from "react-icons/io";
 import {
   NavigationMenu,
@@ -13,7 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/src/components/ui/navigation-menu"
 
 const components = [
   {
@@ -54,7 +54,7 @@ const components = [
 const collections = [
   {
     title: 'Food Collection',
-    href: '/docs',
+    href: '/docs/food',
     description: 'Filling your yummy food cravings combined with cuteness!',
   },
   {
