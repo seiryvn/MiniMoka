@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import sanrio from '@/src/app/assets/sanrio.png'
 import Modal from '../my-components/Modal'
-import Navigation from './Navigation'
+import SignOut from '../my-components/SignOut'
 
 export default function Header() {
   
@@ -12,6 +12,7 @@ export default function Header() {
     <div className="bg-rose-100">
         <div className="flex flex-row py-1 px-5 justify-end align-middle">
         <Modal/>
+        <SignOut/>
         </div>
     </div>
     <div className="flex flex-row mt-3 align-middle justify-center items-center">

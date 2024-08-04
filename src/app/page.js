@@ -13,5 +13,3 @@ export default function Home() {
     </>
   );
 }
-
-// https://rrgulcdegwztusptzodr.supabase.co/auth/v1/callback
