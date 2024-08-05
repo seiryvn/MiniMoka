@@ -23,31 +23,20 @@ const components = [
       "Join Hello Kitty & Friends on their friendship adventures!",
   },
   {
-    title: "Precious Moments",
-    href: "/docs/primitives/hover-card",
-    description:
-      "Cherish every moment with Precious Moment's beautiful porcelain figures!",
-  },
-  {
     title: "Rilakkuma",
     href: "/docs/primitives/progress",
     description:
       "Rilakkuma: The lazy bears where cuteness meets comfort!",
   },
   {
-    title: "Sylvanian Families",
+    title: "Molang",
     href: "/docs/primitives/scroll-area",
-    description: "Bring home the enchantment and warmth of the Sylvanian Families!",
+    description: "Get your arms around the ultimate comfort buddy: Molang!",
   },
   {
     title: "Sumikko Gurashi",
     href: "/docs/primitives/scroll-area",
     description: "Embrace the cozy charms of Sumikko Gurashi!",
-  },
-  {
-    title: "Littlest Pet Shop",
-    href: "/docs/primitives/scroll-area",
-    description: "Adopt joy with the Littlest Pet Shop friends!",
   },
 ]
 
@@ -58,9 +47,14 @@ const collections = [
     description: 'Filling your yummy food cravings combined with cuteness!',
   },
   {
-    title: 'Best Friends Collection',
+    title: 'Festivities Collection',
+    href: '/docs/festive',
+    description: 'Celebrate the season with our Festive Fluffies!'
+  },
+  {
+    title: 'Trick & Treat Collection',
     href: '/docs',
-    description: 'Plushies and figures that strengthen the bonds of friendships!'
+    description: 'Spend your spooky night with these fright-night friends!'
   }
 ]
 

@@ -2,7 +2,7 @@
 import React from "react";
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 
-export default function App() {
+export default function CardBox() {
   const list = [
     {
       title: "Fluffy Bread Plush",
