@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import CardBox from '../../my-components/CardBox'
+import FoodBox from '../../my-components/FoodBox'
 import foodc from '@/src/app/assets/foodc.png'
 export default function page() {
   
@@ -25,7 +25,7 @@ export default function page() {
       
       <div className="m-10">
         <div className="flex flex-col gap-24">
-          <CardBox/>
+          <FoodBox/>
         </div>
       </div>
     </>

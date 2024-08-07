@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import CardBox from '../../my-components/CardBox'
+import FestiveBox from '../../my-components/FestiveBox'
 import holidayc from '@/src/app/assets/holidayc.png'
 export default function page() {
   return (
@@ -24,7 +24,7 @@ export default function page() {
       
       <div className="m-10">
         <div className="flex flex-col gap-24">
-          <CardBox/>
+          <FestiveBox/>
         </div>
       </div>
     </>
