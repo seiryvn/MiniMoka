@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import CardBox from "./CardBox";
 
@@ -47,15 +46,81 @@ export default function FoodBox() {
       price: "$30.50",
     },
     {
+      title: "Ice Cream Sandwhich Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097999870791724/Untitled559_20240808092101.png?ex=66b619c3&is=66b4c843&hm=da6382e6b4755e0d106616d54e5d80484a76174530ebef1f43e297fd0bbb63c0&",
+      brand: 'Pusheen',
+      price: "$65.50",
+    },
+    {
       title: "Lavendar Cupcake Plush",
       img: "https://cdn.discordapp.com/attachments/766728148909031455/1269646741041578137/Untitled556_20240804092221.png?ex=66b0d22b&is=66af80ab&hm=77b7b121e24a61a5c44a6e833f6cfefa6bb983e92db91cbcbe77b4e5892143bf&",
       brand: 'Hello Kitty',
       price: "$40.00",
     },
+    {
+      title: "White Peach Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097997056278550/Untitled559_20240808092817.png?ex=66b619c2&is=66b4c842&hm=216c74cb3f18f956801b7e8d761f7b8a0da75b6d9b81d0581a8db61b453d8741&",
+      brand: 'Sumikko Gurashi',
+      price: "$50.00",
+    },
+    {
+      title: "Butter Pancake Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271100718694006804/Untitled559_20240808093948.png?ex=66b61c4b&is=66b4cacb&hm=22338fa785a26c4688f38446231d7c50f1fe1c19fee58dff01eb888fef928b3b&",
+      brand: 'Molang',
+      price: "$50.00",
+    },
+    {
+      title: "Cheeseburger Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271098001561092117/Untitled559_20240808092009.png?ex=66b619c3&is=66b4c843&hm=cc85ab5abf1284cdb67a1b83360cf6713522558131f2804fb9174c2025013b03&",
+      brand: 'Rilakkuma',
+      price: "$70.00",
+    },
+    {
+      title: "Frosted Cake Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097996506955888/Untitled559_20240808092847.png?ex=66b619c2&is=66b4c842&hm=9fa7c3cd4ffc3963a846c46b012708f47ba247de069e37caca158bf8b86dfc9b&",
+      brand: 'Sumikko Gurashi',
+      price: "$60.00",
+    },
+    {
+      title: "Pineapple Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097999258550383/Untitled559_20240808092111.png?ex=66b619c2&is=66b4c842&hm=062ac71a4de3570c386cef927c40929b11b2a3efc7fd759f4ca0921f7ba596fe&",
+      brand: 'Pusheen',
+      price: "$80.00",
+    },
+    {
+      title: "Dorayaki Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271098002047635468/Untitled559_20240808091942.png?ex=66b619c3&is=66b4c843&hm=60f3f2afe41873c23ddb0ef82c5b955771ad9956f9ac2756e89b13225a6871a7&",
+      brand: 'Rilakkuma',
+      price: "$65.00",
+    },
+    {
+      title: "Baguette Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271098001057648735/Untitled559_20240808092022.png?ex=66b619c3&is=66b4c843&hm=62058ac45fe15c10495ee8903a2e1053340c2c94ceb91aa43851cfc731a22874&",
+      brand: 'Sanrio',
+      price: "$60.00",
+    },
+    {
+      title: "Choco-Milk Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097998700445811/Untitled559_20240808092141.png?ex=66b619c2&is=66b4c842&hm=4d78944ce65a637915a648cd66cc78a62e003bc41cc73a6790ad491dbe847bec&",
+      brand: 'Pusheen',
+      price: "$75.00",
+    },
+    {
+      title: "Banana Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271097997803126844/Untitled559_20240808092803.png?ex=66b619c2&is=66b4c842&hm=2100bea1400bab65b713ef167a85ac2b0c6836a601d8e3724ad833ecc5325031&",
+      brand: 'Sumikko Gurashi',
+      price: "$55.50",
+    },
+    {
+      title: "S'Mores Plush",
+      img: "https://cdn.discordapp.com/attachments/766728148909031455/1271098000327966853/Untitled559_20240808092039.png?ex=66b619c3&is=66b4c843&hm=4f20bc66dafeb891d15f90d13d8ae094f9d550911db34114987f78bc6b9fee83&",
+      brand: 'Pusheen',
+      price: "$80.50",
+    },
   ];
 
   return (
-    <div className="gap-10 grid grid-cols-2 sm:grid-cols-4">
+    <div className="flex flex-row justify-center align-middle items-center px-10">
       <CardBox list={list}/>
     </div>
   );

@@ -53,7 +53,7 @@ const collections = [
   },
   {
     title: 'Trick & Treat Collection',
-    href: '/docs',
+    href: '/docs/halloween',
     description: 'Spend your spooky night with these fright-night friends!'
   }
 ]
@@ -86,7 +86,7 @@ export default function NavMenu() {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Check Out Our Newest Addition: <span className="text-rose-400">Sumikko Gurashi!</span>
+                      Check Out Our Newest Addition: <span className="text-rose-400">Molang!</span>
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       

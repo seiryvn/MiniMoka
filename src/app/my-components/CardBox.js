@@ -4,14 +4,14 @@ import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 
 export default function CardBox({list}) {
   return (
-    <>
+    <div className="flex flex-wrap gap-14 justify-center align-middle items-center">
       {list.map((item, index) => (
-          <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+          <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}className="w-[200px]">
             <CardBody className="overflow-visible p-2">
               <Image
                 shadow="sm"
                 radius="lg"
-                width='100%'
+                width='200'
                 height='400'
                 alt={item.title}
                 src={item.img}
@@ -24,6 +24,6 @@ export default function CardBox({list}) {
             </CardFooter>
           </Card>
         ))}
-    </>
+    </div>
   )
 }

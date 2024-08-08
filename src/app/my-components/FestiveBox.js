@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import CardBox from "./CardBox";
 
@@ -55,7 +54,7 @@ export default function FestiveBox() {
   ];
 
   return (
-    <div className="gap-10 grid grid-cols-2 sm:grid-cols-4">
+    <div className="flex flex-row justify-center align-middle items-center px-10">
       <CardBox list={list}/>
     </div>
   );
