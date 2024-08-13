@@ -42,19 +42,19 @@ const components = [
 
 const Plushies = [
   {
-    title: 'Food Collection',
-    href: '/docs/food',
-    description: 'Filling your yummy food cravings combined with cuteness!',
+    title: 'Sanrio',
+    href: '/docs/sanrio',
+    description: 'Join Hello Kitty & Friends on their adorable adventures!',
   },
   {
-    title: 'Festivities Collection',
-    href: '/docs/festive',
-    description: 'Celebrate the season with our Festive Fluffies!'
+    title: 'Rilakkuma',
+    href: '/docs/rilakkuma',
+    description: 'Rilakkuma plushies: The ultimate snuggle buddies.'
   },
   {
-    title: 'Trick & Treat Collection',
-    href: '/docs/halloween',
-    description: 'Spend your spooky night with these fright-night friends!'
+    title: 'Sumikko Gurashi',
+    href: '/docs/sumikko',
+    description: 'Cuddle up with the endearing world of Sumikko Gurashi.'
   }
 ]
 
@@ -111,7 +111,7 @@ export default function NavMenu() {
         </NavigationMenuItem>
         {/* THREE */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Figurines!</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg">Figurines</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -128,7 +128,7 @@ export default function NavMenu() {
         </NavigationMenuItem>
         {/* FOUR */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Plushies!</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg">Plushies</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {Plushies.map((Plushies) => (
