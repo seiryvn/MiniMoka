@@ -18,7 +18,7 @@ import {
 const components = [
   {
     title: "Sanrio",
-    href: "/docs/primitives/alert-dialog",
+    href: "/docs/sanrio",
     description:
       "Join Hello Kitty & Friends on their friendship adventures!",
   },
@@ -99,7 +99,7 @@ export default function NavMenu() {
               <ListItem href="/docs" title="Shop All New!">
                 Explore all of our new items in store.
               </ListItem>
-              <ListItem href="/docs/installation" title="Food Collection">
+              <ListItem href="/docs/food" title="Food Collection">
                 Filling your cravings combined with cuteness!
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Keychains">

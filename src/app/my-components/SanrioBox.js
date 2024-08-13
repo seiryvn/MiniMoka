@@ -1,7 +1,7 @@
 import React from "react";
 import CardBox from "./CardBox";
 
-export default function HalloweenBox() {
+export default function SanrioBox() {
   const list = [
     {
       title: "Witch's Helper Plush",

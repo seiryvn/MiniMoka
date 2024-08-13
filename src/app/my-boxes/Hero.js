@@ -1,10 +1,15 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import heroimg from '@/src/app/assets/heroimg.png'
 import { MyCarousel } from '../my-components/Carousels'
 import LinkButton from '../my-components/LinkButton'
+import { useCart } from '@/src/lib/store'
+import { Button } from '@/src/components/ui/button'
 
 export default function Hero() {
+  const { numOfItems, addToCart, removeFromCart } = useCart((state) => state);
+
   return (
     <>
     <div className="bg-rose-100">
@@ -23,6 +28,11 @@ export default function Hero() {
             <div className="mt-3"><LinkButton title="Shop All"/></div>
       </div>
     </div>
+
+    {/* Cart Zustand! */}
+    <Button variant="ghost" onClick={addToCart}>add to cart</Button>
+    <span>{numOfItems}</span>
+    <Button variant="ghost" onClick={removeFromCart}>remove an item</Button>
     </div>
     <MyCarousel/>
     </>
