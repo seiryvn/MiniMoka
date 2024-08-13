@@ -7,7 +7,7 @@ export default async function HalloweenBox() {
   const { data, error } = await supabase
     .from('MiniMoka')
     .select('*')
-    .eq('plush_group', 'Halloween')
+    .eq('figure_group', 'Halloween')
 
 
   return (

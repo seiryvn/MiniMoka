@@ -17,30 +17,30 @@ import {
 
 const components = [
   {
-    title: "Sanrio",
-    href: "/docs/sanrio",
+    title: "Skull Panda",
+    href: "/docs/skull",
     description:
-      "Join Hello Kitty & Friends on their friendship adventures!",
+      "Elevate your collection with the iconic Skull Panda figurines.",
   },
   {
-    title: "Rilakkuma",
-    href: "/docs/primitives/progress",
+    title: "Hirono",
+    href: "/docs/hirono",
     description:
-      "Rilakkuma: The lazy bears where cuteness meets comfort!",
+      "Hirono figurines: Where artistry meets charm.",
   },
   {
-    title: "Molang",
-    href: "/docs/primitives/scroll-area",
-    description: "Get your arms around the ultimate comfort buddy: Molang!",
+    title: "Precious Moments",
+    href: "/docs/precious",
+    description: "Precious Moments: Little reminders of love and happiness.",
   },
   {
-    title: "Sumikko Gurashi",
-    href: "/docs/primitives/scroll-area",
-    description: "Embrace the cozy charms of Sumikko Gurashi!",
+    title: "Azura",
+    href: "/docs/azura",
+    description: "Elevate your display with the enchanting Azura series.",
   },
 ]
 
-const collections = [
+const Plushies = [
   {
     title: 'Food Collection',
     href: '/docs/food',
@@ -86,7 +86,7 @@ export default function NavMenu() {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Check Out Our Newest Addition: <span className="text-rose-400">Molang!</span>
+                      Check Out Our Newest Addition: <span className="text-rose-400">Azura!</span>
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       
@@ -111,7 +111,7 @@ export default function NavMenu() {
         </NavigationMenuItem>
         {/* THREE */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Brands!</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg">Figurines!</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -128,16 +128,16 @@ export default function NavMenu() {
         </NavigationMenuItem>
         {/* FOUR */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Collections</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg">Plushies!</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {collections.map((collections) => (
+              {Plushies.map((Plushies) => (
                 <ListItem
-                  key={collections.title}
-                  title={collections.title}
-                  href={collections.href}
+                  key={Plushies.title}
+                  title={Plushies.title}
+                  href={Plushies.href}
                 >
-                  {collections.description}
+                  {Plushies.description}
                 </ListItem>
               ))}
             </ul>
@@ -180,66 +180,4 @@ const ListItem = React.forwardRef(({ className, title, children, ...props }, ref
     </li>
   )
 })
-ListItem.displayName = "ListItem"
-
-
-// 'use client'
-// import React from 'react'
-// import LinkButton from '../my-components/LinkButton'
-// import {
-//     NavigationMenu,
-//     NavigationMenuContent,
-//     NavigationMenuIndicator,
-//     NavigationMenuItem,
-//     NavigationMenuLink,
-//     NavigationMenuList,
-//     NavigationMenuTrigger,
-//     NavigationMenuViewport,
-//   } from "@/components/ui/navigation-menu"
-  
-  
-// export default function NavMenu() {
-//   return (
-//     <>
-//     <div className="flex flex-row gap-[5px]">
-//     <LinkButton title="Home"/>
-//       <NavigationMenu className="text-zinc-800">
-//         <NavigationMenuList>
-//           {/* Item Two */}
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-lg">New!</NavigationMenuTrigger>
-//             <NavigationMenuContent>
-//               <NavigationMenuLink>Link</NavigationMenuLink>
-//             </NavigationMenuContent>
-//           </NavigationMenuItem>
-//           {/* Item Three */}
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-lg">Figurines</NavigationMenuTrigger>
-//             <NavigationMenuContent>
-//               <NavigationMenuLink>Link</NavigationMenuLink>
-//             </NavigationMenuContent>
-//           </NavigationMenuItem>
-//           {/* Item Four */}
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-lg">Plushies</NavigationMenuTrigger>
-//             <NavigationMenuContent>
-//               <NavigationMenuLink>Link</NavigationMenuLink>
-//             </NavigationMenuContent>
-//           </NavigationMenuItem>
-//           {/* Item Five */}
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-lg">Collections</NavigationMenuTrigger>
-//             <NavigationMenuContent>
-//               <NavigationMenuLink>Link</NavigationMenuLink>
-//             </NavigationMenuContent>
-//           </NavigationMenuItem>
-//           {/* End */}
-//         </NavigationMenuList>
-
-
-//       </NavigationMenu>
-//     </div>
-//     </>
-    
-//   )
-// }
+// ListItem.displayName = "ListItem"

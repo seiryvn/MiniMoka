@@ -7,11 +7,11 @@ export default async function FestiveBox() {
   const { data, error } = await supabase
     .from('MiniMoka')
     .select('*')
-    .eq('plush_group', 'Festive')
+    .eq('figure_group', 'Festive')
 
   return (
     <div className="flex flex-row justify-center align-middle items-center px-10">
-      <CardBox list={list}/>
+      <CardBox list={data}/>
     </div>
   );
 }

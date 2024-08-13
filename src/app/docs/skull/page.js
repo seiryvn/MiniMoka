@@ -1,10 +1,10 @@
 import React from 'react'
-import SanrioBox from '../../my-components/SanrioBox'
+import SkullBox from '../../my-components/SkullBox'
 
 export default function page() {
   return (
     <>
-        <SanrioBox/>
+        <SkullBox/>
     </>
   )
 }

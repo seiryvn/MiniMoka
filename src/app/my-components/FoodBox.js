@@ -7,7 +7,7 @@ export default async function FoodBox() {
   const { data, error } = await supabase
     .from('MiniMoka')
     .select('*')
-    .eq('plush_group', 'Food')
+    .eq('figure_group', 'Figurine')
 
   return (
     <div className="flex flex-row justify-center align-middle items-center px-10">
