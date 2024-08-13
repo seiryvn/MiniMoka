@@ -1,10 +1,10 @@
 import React from 'react'
-import HironoBox from '../../my-components/HironoBox'
+import BoxHirono from '../../my-components/BoxHirono'
 
 export default function page() {
   return (
     <>
-        <HironoBox/>
+        <BoxHirono/>
     </>
   )
 }

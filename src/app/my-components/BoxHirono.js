@@ -2,12 +2,12 @@ import React from "react";
 import CardBox from "./CardBox";
 import { createClient } from "@/utils/supabase/client";
 
-export default async function SkullBox() {
+export default async function BoxHirono() {
   const supabase = createClient();
   const { data, error } = await supabase
     .from('MiniMoka')
     .select('*')
-    .eq('figure_brand', 'Skull Panda')
+    .eq('figure_brand', 'Hirono')
 
 
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
-import PreciousBox from '../../my-components/PreciousBox'
+import BoxPrecious from '../../my-components/BoxPrecious'
 
 export default function page() {
   return (
     <>
-        <PreciousBox/>
+        <BoxPrecious/>
     </>
   )
 }

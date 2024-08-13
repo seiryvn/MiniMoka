@@ -1,10 +1,10 @@
 import React from 'react'
-import SkullBox from '../../my-components/SkullBox'
+import BoxSkull from '../../my-components/BoxSkull'
 
 export default function page() {
   return (
     <>
-        <SkullBox/>
+        <BoxSkull/>
     </>
   )
 }

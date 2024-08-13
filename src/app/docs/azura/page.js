@@ -1,10 +1,10 @@
 import React from 'react'
-import AzuraBox from '../../my-components/AzuraBox'
+import BoxAzura from '../../my-components/BoxAzura'
 
 export default function page() {
   return (
     <>
-        <AzuraBox/>
+        <BoxAzura/>
     </>
   )
 }
