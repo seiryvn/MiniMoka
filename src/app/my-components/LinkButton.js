@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { buttonVariants } from "@/src/components/ui/button"
 
 
-export default function LinkButton(props) {
+export default function LinkButton({title}) {
   return (
     <>
-        <Link href="/loggedin" className={buttonVariants({ variant: "outline" })}>
-        <div className="flex flex-row justify-center align-middle items-center gap-2 text-lg text-zinc-800">{props.icon} {props.title}
+        <Link href="/docs/all">
+        <div className="flex justify-center align-middle items-center w-40 h-10 rounded-xl bg-transparent text-black border-[2px] border-black  text-2xl">{title}
         </div>
         </Link>
     </>

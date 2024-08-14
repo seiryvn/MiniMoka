@@ -29,6 +29,11 @@ const components = [
       "Hirono figurines: Where artistry meets charm.",
   },
   {
+    title: "Nanci",
+    href: "/docs/nanci",
+    description: "Mixing traditional artistry, beauty is captured with Nanci.",
+  },
+  {
     title: "Precious Moments",
     href: "/docs/precious",
     description: "Precious Moments: Little reminders of love and happiness.",
@@ -38,24 +43,6 @@ const components = [
     href: "/docs/azura",
     description: "Elevate your display with the enchanting Azura series.",
   },
-]
-
-const Plushies = [
-  {
-    title: 'Sanrio',
-    href: '/docs/sanrio',
-    description: 'Join Hello Kitty & Friends on their adorable adventures!',
-  },
-  {
-    title: 'Rilakkuma',
-    href: '/docs/rilakkuma',
-    description: 'Rilakkuma plushies: The ultimate snuggle buddies.'
-  },
-  {
-    title: 'Sumikko Gurashi',
-    href: '/docs/sumikko',
-    description: 'Cuddle up with the endearing world of Sumikko Gurashi.'
-  }
 ]
 
 export default function NavMenu() {
@@ -68,6 +55,15 @@ export default function NavMenu() {
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <div className="flex flex-row gap-1 justify-center align-middle items-center text-lg">
               <AiOutlineHome/>Home
+              </div>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/docs/all" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <div className="flex flex-row gap-1 justify-center align-middle items-center text-lg">
+              Shop All
               </div>
             </NavigationMenuLink>
           </Link>
@@ -86,7 +82,7 @@ export default function NavMenu() {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Check Out Our Newest Addition: <span className="text-rose-400">Azura!</span>
+                      Check Out Our Newest Addition: <span className="text-stone-500">Azura!</span>
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       
@@ -99,12 +95,12 @@ export default function NavMenu() {
               <ListItem href="/docs" title="Shop All New!">
                 Explore all of our new items in store.
               </ListItem>
-              <ListItem href="/docs/food" title="Food Collection">
+              {/* <ListItem href="/docs/food" title="Food Collection">
                 Filling your cravings combined with cuteness!
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Keychains">
                 A collection of bag & charm accessories.
-              </ListItem>                
+              </ListItem>                 */}
                 
               </ul>
           </NavigationMenuContent>
@@ -127,28 +123,13 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         {/* FOUR */}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Plushies</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {Plushies.map((Plushies) => (
-                <ListItem
-                  key={Plushies.title}
-                  title={Plushies.title}
-                  href={Plushies.href}
-                >
-                  {Plushies.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+        
         {/* FIVE */}
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <div className="flex flex-row gap-1 justify-center align-middle items-center text-lg">
-              <span className="text-rose-400 flex flex-row gap-1 items-center">Sale!<IoMdFlower /></span>
+              <span className="text-stone-500 flex flex-row gap-1 items-center">Sale!<IoMdFlower /></span>
               </div>
             </NavigationMenuLink>
           </Link>

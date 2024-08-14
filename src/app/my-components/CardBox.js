@@ -19,7 +19,7 @@ export default function CardBox({list}) {
             </CardBody>
             <CardFooter className="text-md flex flex-col gap-1 items-start text-start pt-1">
               <p className="text-default-500">{item.figure_brand}</p>
-              <b>{item.figure_name}</b>
+              <b>{item.figure_name} {item.figure_character}</b>
               <p>${item.price.toFixed(2)}</p>
             </CardFooter>
           </Card>
