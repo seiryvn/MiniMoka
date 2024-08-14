@@ -2,7 +2,7 @@ import React from "react";
 import CardBox from "./CardBox";
 import { createClient } from "@/utils/supabase/client";
 
-export default async function AzuraBox() {
+export default async function BoxAzura() {
   const supabase = createClient();
   const { data, error } = await supabase
     .from('MiniMoka')

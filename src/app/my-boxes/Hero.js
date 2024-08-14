@@ -6,6 +6,7 @@ import { MyCarousel } from '../my-components/Carousels'
 import LinkButton from '../my-components/LinkButton'
 import { useCart } from '@/src/lib/store'
 import { Button } from '@/src/components/ui/button'
+import { StickyScrollReveal } from '../my-components/StickyScroll'
 
 export default function Hero() {
   const { numOfItems, addToCart, removeFromCart } = useCart((state) => state);
@@ -35,6 +36,10 @@ export default function Hero() {
     <Button variant="ghost" onClick={removeFromCart}>remove an item</Button>
     </div>
     <MyCarousel/>
+    <div className="p-0">
+      <StickyScrollReveal/>
+    </div>
+   
     </>
   )
 }

@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const {nextui} = require("@nextui-org/react");
 import ('tailwindcss').Config
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 module.exports = {
   daisyui: {
@@ -80,5 +85,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui(), require('daisyui')],
+  plugins: [require("tailwindcss-animate"), nextui(), require('daisyui'), addVariablesForColors,
+  ],
 }
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+)}
