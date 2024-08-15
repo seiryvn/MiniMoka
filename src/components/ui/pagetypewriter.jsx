@@ -3,7 +3,7 @@ import { cn } from "@/src/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
-export const TypewriterEffect = ({
+export const PageTypewriterEffect = ({
   words,
   className,
   cursorClassName,
@@ -141,7 +141,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-4xl font-bold"
           style={{
             whiteSpace: "nowrap",
           }}
@@ -163,7 +163,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-stone-500",
+          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-10 bg-stone-500",
           cursorClassName
         )}
       ></motion.span>
