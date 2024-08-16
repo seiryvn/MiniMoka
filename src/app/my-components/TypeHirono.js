@@ -19,7 +19,7 @@ export function TypeHirono() {
     },
     {
       text: 'Hirono.',
-      className: "text-stone-700 dark:text-stone-700",
+      className: "text-stone-500 dark:text-stone-500",
     },
   ];
   return (

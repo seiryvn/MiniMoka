@@ -5,6 +5,7 @@ import orb from '@/src/app/assets/orb.png'
 import Modal from '../my-components/Modal'
 import SignOut from '../my-components/SignOut'
 import { createClient } from '@/utils/supabase/server'
+import Drawer from '../my-components/Drawer'
 
 export default async function Header() {
   const supabase = createClient();
@@ -13,8 +14,9 @@ export default async function Header() {
   return (
     <>
     <div className="bg-stone-200">
-        <div className="flex flex-row py-1 px-5 justify-end align-middle gap-10">
+        <div className="flex flex-row py-1 px-5 justify-end items-end align-middle gap-10">
         {userdata? <SignOut/> : <Modal/>}
+        <Drawer/>
         </div>
     </div>
     <div className="flex flex-row mt-3 align-middle justify-center items-center">

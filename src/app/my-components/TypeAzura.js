@@ -1,18 +1,18 @@
 'use client'
 import { TypewriterEffectSmooth } from "@/src/components/ui/pagetypewriter";
-export function TypeNanci() {
+export function TypeAzura() {
   const words = [
     {
-      text: 'Discover',
+      text: 'Stars',
     },
     {
-      text: 'Harmony',
+      text: 'Aligned',
     },
     {
-      text: 'through',
+      text: 'with',
     },
     {
-      text: 'Nanci.',
+      text: 'Azura.',
       className: "text-stone-500 dark:text-stone-500",
     },
   ];

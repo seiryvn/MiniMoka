@@ -21,7 +21,7 @@ export default function MyHero({intro, title, description, author, link}) {
                   className="mask mask-squircle h-[180px] w-[180px] p-0 m-0"
                   src={link} 
                 />
-                <div>
+                <div className="flex flex-col gap-5">
                   <h1 className="text-xl">MEET THE ARTIST</h1>
                   <h3 className="text-default-500">{author}
                   </h3>

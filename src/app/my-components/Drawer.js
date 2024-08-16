@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@/src/components/ui/button'
 
 export default function Drawer() {
   return (
@@ -6,8 +7,8 @@ export default function Drawer() {
     <div className="drawer drawer-end">
     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
     <div className="drawer-content">
-        {/* Page content here */}asdasdasd
-        <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label>
+        {/* Page content here */}
+        <label htmlFor="my-drawer-4" className="drawer-button btn">Open</label>
     </div>
     <div className="drawer-side">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>

@@ -1,18 +1,16 @@
 'use client'
 import { TypewriterEffectSmooth } from "@/src/components/ui/pagetypewriter";
-export function TypeNanci() {
+export function TypePrecious() {
   const words = [
     {
-      text: 'Discover',
+      text: 'Treasuring',
     },
     {
-      text: 'Harmony',
+      text: "life's",
     },
+
     {
-      text: 'through',
-    },
-    {
-      text: 'Nanci.',
+      text: 'Precious Moments.',
       className: "text-stone-500 dark:text-stone-500",
     },
   ];
