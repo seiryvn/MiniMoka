@@ -27,7 +27,7 @@ export default function Hero() {
     {/* <MyCarousel/> */}
     <div className="px-16 py-10">
       {/* <StickyScrollReveal/> */}
-      <ContentCard logged="hirono"/>
+      <ContentCard logged="hirono" />
     </div>
    
     </>
