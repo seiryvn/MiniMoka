@@ -9,13 +9,14 @@ import { Button } from '@/src/components/ui/button'
 import { StickyScrollReveal } from '../my-components/StickyScroll'
 import Overlay from '../my-components/Overlay'
 import { TypeWriter } from '../my-components/TypeWriter'
+import { ContentCard } from '../my-components/ContentCard'
+
 export default function Hero() {
   const { numOfItems, addToCart, removeFromCart } = useCart((state) => state);
 
   return (
     <>
     <Overlay/>
-    <TypeWriter/>
     <div className="bg-stone-200">
 
     {/* Cart Zustand! */}
@@ -23,9 +24,10 @@ export default function Hero() {
     <span>{numOfItems}</span>
     <Button variant="ghost" onClick={removeFromCart}>remove an item</Button>
     </div>
-    <MyCarousel/>
-    <div className="p-0">
-      <StickyScrollReveal/>
+    {/* <MyCarousel/> */}
+    <div className="px-16 py-10">
+      {/* <StickyScrollReveal/> */}
+      <ContentCard logged="hirono"/>
     </div>
    
     </>
