@@ -25,9 +25,9 @@ export default function Hero() {
     <Button variant="ghost" onClick={removeFromCart}>remove an item</Button>
     </div>
     {/* <MyCarousel/> */}
-    <div className="px-16 py-10">
+    <div className="px-16 py-10 flex flex-row gap-10 ">
       {/* <StickyScrollReveal/> */}
-      <ContentCard logged="hirono" />
+      <ContentCard logged1="nanci" logged2="azura" logged3="hirono" logged4="skull"/>
     </div>
    
     </>

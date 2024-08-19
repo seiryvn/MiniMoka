@@ -4,14 +4,11 @@ import Image from 'next/image';
 import { Button } from '@nextui-org/react';
 
 export default async function ItemPage({params}) {
-    const figure_name = params.figure_name.replace('%20', ' ');
+    const figure_name = params.figure_name.replaceAll('%20', ' ');
     console.log("Figure Nmame: ");
     console.log(figure_name)
     const supabase = createClient();
     const {data, error} = await supabase.from("MiniMoka").select("*").eq("figure_name", figure_name).single();
-    console.log("Data: ")
-    console.log(data);
-    console.log(`Error: ${error}`)
 
   return (
     <>
