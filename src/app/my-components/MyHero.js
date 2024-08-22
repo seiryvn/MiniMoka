@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 export default function MyHero({intro, title, description, author, link}) {
   return (
@@ -18,12 +17,9 @@ export default function MyHero({intro, title, description, author, link}) {
             </div>
             <div className=" h-[50vh] max-h-[50vh] w-full bg-stone-100 rounded-lg shadow-lg border-default-300 border-[1px]">
               <div className="flex flex-row p-10 gap-5 align-middle text-center justify-center items-center">
-                <Image
+                <img
                   className="mask mask-squircle h-[180px] w-[180px] p-0 m-0"
                   src={link} 
-                  width={180}
-                  height={180}
-                  alt="artist image"
                 />
                 <div className="flex flex-col gap-5">
                   <h1 className="text-xl">MEET THE ARTIST</h1>
