@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import CardBox from "./CardBox";
 import { createClient } from "@/utils/supabase/client";

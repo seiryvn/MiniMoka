@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/src/lib/utils";
-import { motion, stagger, useAnimate, useInView } from "framer-motion";
+import { motion, stagger, useAnimate, useInView, animate } from "framer-motion";
 import { useEffect } from "react";
 
 export const PageTypewriterEffect = ({

@@ -105,8 +105,7 @@ export function ContentCard({logged1, logged2, logged3, logged4}) {
             Skull Panda
           </h1>
           <p className="font-normal text-sm text-black-500 relative z-10 my-4">
-            Card with Author avatar, complete name and time to read - most
-            suitable for blogs.
+          Elevate your collection with the iconic Skull Panda figurines.
           </p>
         </div>
       </div>
