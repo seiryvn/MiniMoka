@@ -8,7 +8,7 @@ export default {
           hostname: "i.pinimg.com",
           port: "",
           pathname:
-            "/originals/**",
+            "/**",
         },
       ],
     },
