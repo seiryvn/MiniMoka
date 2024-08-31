@@ -24,10 +24,11 @@ export function MyCarousel({img}) {
       loop: false
     }}
     className="w-full max-w-xs">
+      <div className="p-0 m-0 bg-stone-100 rounded-lg shadow-lg">
       <CarouselContent>
         {img.map((link, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
+            <div className="p-0">
               {/* <Card> */}
                   <CardContent className="flex aspect-square p-1">
                     <Image src={link} alt={index} width={450} height={450} className="rounded-lg"/>
@@ -37,6 +38,7 @@ export function MyCarousel({img}) {
           </CarouselItem>
         ))}
       </CarouselContent>
+      </div>
       <CarouselNext/>
       <CarouselPrevious/>
     </Carousel>

@@ -2,12 +2,12 @@ import React from "react";
 import CardBox from "./CardBox";
 import { createClient } from "@/utils/supabase/client";
 
-export default async function BoxPrecious() {
+export default async function BoxDimoo() {
   const supabase = createClient();
   const { data, error } = await supabase
     .from('MiniMoka')
     .select('*')
-    .eq('figure_brand', 'Precious Moments')
+    .eq('figure_brand', 'Dimoo')
 
 
   return (

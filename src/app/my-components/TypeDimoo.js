@@ -1,16 +1,18 @@
 'use client'
 import { TypewriterEffectSmooth } from "@/src/components/ui/pagetypewriter";
-export function TypePrecious() {
+export function TypeDimoo() {
   const words = [
     {
-      text: 'Treasuring',
+      text: 'Wander',
     },
     {
-      text: "life's",
+      text: "fantasy",
     },
-
     {
-      text: 'Precious Moments.',
+      text: "with",
+    },
+    {
+      text: 'Dimoo.',
       className: "text-stone-500 dark:text-stone-500",
     },
   ];

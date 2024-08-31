@@ -34,9 +34,9 @@ const components = [
     description: "Mixing traditional artistry, beauty is captured with Nanci.",
   },
   {
-    title: "Precious Moments",
-    href: "/docs/precious",
-    description: "Precious Moments: Little reminders of love and happiness.",
+    title: "Dimoo",
+    href: "/docs/dimoo",
+    description: "Join Dimoo on his wonderous adventures across a fantasy world.",
   },
   {
     title: "Azura",
