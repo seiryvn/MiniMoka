@@ -24,7 +24,7 @@ import {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
-          redirectTo: `https://mini-moka.vercel.app//auth/callback`,
+          redirectTo: `https://mini-moka.vercel.app/auth/callback`,
         },
       })
     }
@@ -34,7 +34,7 @@ import {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `https://mini-moka.vercel.app//auth/callback`,
+          redirectTo: `https://mini-moka.vercel.app/auth/callback`,
         },
       })
     }
