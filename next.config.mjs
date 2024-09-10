@@ -5,7 +5,7 @@ export default {
       remotePatterns: [
         {
           protocol: "https",
-          hostname: "i.pinimg.com",
+          hostname: "rrgulcdegwztusptzodr.supabase.co",
           port: "",
           pathname:
             "/**",
