@@ -9,7 +9,7 @@ export function ContentCard({logged1, logged2, logged3, logged4}) {
     <div className="max-w-xs w-full group/card">
       <div
         className={
-          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500 max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://i.pinimg.com/originals/a7/ec/66/a7ec6693a7c1e3a80b802e9a1fd6de0a.jpg)] bg-cover"
+          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500 max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://rrgulcdegwztusptzodr.supabase.co/storage/v1/object/public/minimokabucket/NANCIcontentcard.jpg)] bg-cover"
         }
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-white opacity-20"></div>
