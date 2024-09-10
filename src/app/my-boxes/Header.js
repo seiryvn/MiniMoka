@@ -16,7 +16,7 @@ export default async function Header() {
     <div className="bg-stone-200">
         <div className="flex flex-row py-1 px-5 justify-end items-end align-middle gap-10">
         {userdata? <SignOut/> : <Modal/>}
-        <Drawer/>
+        {/* <Drawer/> */}
         </div>
     </div>
     <div className="flex flex-row mt-3 align-middle justify-center items-center">

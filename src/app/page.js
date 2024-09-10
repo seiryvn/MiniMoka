@@ -9,7 +9,7 @@ export default function Home() {
     
     <>
     <Hero/>
-    <LinkButton title="Login page test"/>
+    {/* <LinkButton title="Login page test"/> */}
     </>
   );
 }

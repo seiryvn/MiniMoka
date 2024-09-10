@@ -20,9 +20,9 @@ export default function Hero() {
     <div className="bg-stone-200">
 
     {/* Cart Zustand! */}
-    <Button variant="ghost" onClick={addToCart}>add to cart</Button>
+    {/* <Button variant="ghost" onClick={addToCart}>add to cart</Button>
     <span>{numOfItems}</span>
-    <Button variant="ghost" onClick={removeFromCart}>remove an item</Button>
+    <Button variant="ghost" onClick={removeFromCart}>remove an item</Button> */}
     </div>
     {/* <MyCarousel/> */}
     <div className="px-16 py-10 flex flex-row gap-10 ">
