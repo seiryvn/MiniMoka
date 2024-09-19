@@ -36,7 +36,7 @@ export function ContentCard({logged1, logged2, logged3, logged4}) {
     <div className="max-w-xs w-full group/card">
       <div
         className={
-          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://i.pinimg.com/originals/78/f9/a6/78f9a6beb570dd76650dd00ab74b80b6.jpg)] bg-cover"
+          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://rrgulcdegwztusptzodr.supabase.co/storage/v1/object/public/minimokabucket/AZURAcontentcard.jpg)] bg-cover"
         }
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-white opacity-20"></div>
@@ -63,7 +63,7 @@ export function ContentCard({logged1, logged2, logged3, logged4}) {
     <div className="max-w-xs w-full group/card">
       <div
         className={
-          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://i.pinimg.com/originals/b2/47/09/b24709d2d513fc9eb8b1d6cfdc83bf10.jpg)] bg-cover"
+          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://rrgulcdegwztusptzodr.supabase.co/storage/v1/object/public/minimokabucket/HIRONOcontentcard.jpg))] bg-cover"
         }
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-white opacity-20"></div>
@@ -90,7 +90,7 @@ export function ContentCard({logged1, logged2, logged3, logged4}) {
     <div className="max-w-xs w-full group/card">
       <div
         className={
-          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://i.pinimg.com/originals/91/c7/d4/91c7d44f8d02bab4b0feefb0e97dab46.jpg)] bg-cover"
+          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-2xl border-[2px] border-default-500  max-w-sm mx-auto flex flex-col justify-between p-4 bg-[url(https://rrgulcdegwztusptzodr.supabase.co/storage/v1/object/public/minimokabucket/SKULLcontentcard.jpg)] bg-cover"
         }
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-white opacity-20"></div>
