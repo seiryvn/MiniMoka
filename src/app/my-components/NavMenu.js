@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
 import { AiOutlineHome } from "react-icons/ai";
@@ -46,6 +45,7 @@ const components = [
 ]
 
 export default function NavMenu() {
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -59,15 +59,15 @@ export default function NavMenu() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs/all" legacyBehavior passHref>
+        {/* <NavigationMenuItem>
+          <Link href="/docs/all" legacyBehavior passHref >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <div className="flex flex-row gap-1 justify-center align-middle items-center text-lg">
               Shop All
               </div>
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         {/* TWO */}
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-lg">New!</NavigationMenuTrigger>
