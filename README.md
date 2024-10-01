@@ -1,1 +1,1 @@
-Mini Moka is a collectable plush and figurine store!
+Mini Moka is a collectable figurine store!
