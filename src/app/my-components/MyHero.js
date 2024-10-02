@@ -9,7 +9,7 @@ export default function MyHero({intro, title, description, author, link}) {
             {intro}
           </div>
           <div className="flex flex-row gap-20 justify-center align-middle items-center  mb-10">
-            <div className=" h-full w-full min-w-[95vh] max-w-[105vh] bg-stone-200 rounded-lg shadow-lg border-default-300 border-[1px]">
+            <div className=" h-full w-full lg:min-w-[95vh] lg:max-w-[105vh] bg-stone-200 rounded-lg shadow-lg border-default-300 border-[1px] sm:min-w-[20vh] sm:max-w-[50vh]">
               <div className="flex flex-col text-start p-10 gap-5 align-middle">
                 <h1 className="text-xl">{title}</h1>
                 <h3 className="text-default-500">{description}</h3>
