@@ -34,7 +34,7 @@ import {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `https://mini-moka.com/loggedin`,
+          redirectTo: `https://mini-moka.com/auth/callback`,
         },
       })
     }
