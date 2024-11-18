@@ -5,7 +5,6 @@ import orb from '@/src/app/assets/orb.png'
 import Modal from '../my-components/Modal'
 import SignOut from '../my-components/SignOut'
 import { createClient } from '@/utils/supabase/server'
-import Drawer from '../my-components/Drawer'
 
 export default async function Header() {
   const supabase = createClient();
