@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {
     Sheet,
@@ -6,7 +7,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet"
+  } from "@/src/components/ui/sheet"
   
 
 export default function MySheet() {

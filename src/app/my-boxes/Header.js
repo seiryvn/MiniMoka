@@ -4,6 +4,7 @@ import sanrio from '@/src/app/assets/sanrio.png'
 import orb from '@/src/app/assets/orb.png'
 import Modal from '../my-components/Modal'
 import SignOut from '../my-components/SignOut'
+import MySheet from '../my-components/MySheet'
 import { createClient } from '@/utils/supabase/server'
 
 export default async function Header() {
@@ -15,7 +16,7 @@ export default async function Header() {
     <div className="bg-stone-200">
         <div className="flex flex-row py-1 px-5 justify-end items-end align-middle gap-10">
         {userdata? <SignOut/> : <Modal/>}
-        {/* <Drawer/> */}
+        <MySheet/>
         </div>
     </div>
     <div className="flex flex-row mt-3 align-middle justify-center items-center">
