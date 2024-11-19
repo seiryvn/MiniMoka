@@ -75,7 +75,7 @@ import {
                 <Buttons title="Google " onClick={signInWithGoogle} icon={<FcGoogle/>}/>
                 <Buttons title="Discord " icon={<FaDiscord/>}
                 onClick={signInWithDiscord}/>
-                <AlertDialogCancel className= "bg-stone-200 text-md w-full">Cancel</AlertDialogCancel>
+                <AlertDialogCancel className= "bg-stone-200 text-lg w-full">Cancel</AlertDialogCancel>
               </div>
               
             </div>

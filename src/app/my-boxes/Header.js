@@ -14,9 +14,9 @@ export default async function Header() {
   return (
     <>
     <div className="bg-stone-200">
-        <div className="flex flex-row py-1 px-5 justify-end items-end align-middle gap-10">
-        {userdata? <SignOut/> : <Modal/>}
+        <div className="flex flex-row py-1 px-5 justify-between align-middle gap-10">
         <MySheet/>
+        {userdata? <SignOut/> : <Modal/>}
         </div>
     </div>
     <div className="flex flex-row mt-3 align-middle justify-center items-center">
