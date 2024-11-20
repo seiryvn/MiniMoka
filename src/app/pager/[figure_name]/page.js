@@ -3,6 +3,7 @@ import { createClient } from '@/utils/supabase/server'
 import Image from 'next/image';
 import { MyCarousel } from '../../my-components/Carousels';
 import CartButton from '../../my-components/CartButton';
+import { Button } from '@nextui-org/react';
 
 export default async function ItemPage({params}) {
     const figure_name = params.figure_name.replaceAll('%20', ' ');
@@ -29,7 +30,8 @@ export default async function ItemPage({params}) {
                 <div className="my-5 flex flex-col items-start align-middle justify-start gap-5 mx-5">
                     <h1 className="text-3xl">{figure_name}</h1>
                     <h2 className="text-3xl">${data.price.toFixed(2)}</h2>
-                    <CartButton/>
+                    {/* <CartButton/> */}
+                    <Button className="text-2xl border-black border-2 bg-white">Checkout</Button>
                     <h2 className="text-3xl">{data.description}</h2>
                 </div>
             </div>
