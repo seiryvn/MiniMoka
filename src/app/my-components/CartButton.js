@@ -16,6 +16,6 @@ export default function CartButton({ figure_name, image, price, product_id
         });
     }
   return (
-    <Button onClick={useAddToCart}>Add to Cart</Button>
+    <Button className="text-2xl bg-white border-2 border-black" onClick={useAddToCart}>Add to Cart</Button>
   )
 }
